@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/**Homepage layout**/
+.homepage{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.homepage .main_content{
+    position: relative;
+    background: url(./images/homepage.png);
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    height: 90.3vh;
+    bottom: 0;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.column{
+    width: 100%;
+    height: auto;
+}
+
+.prod_img1{
+    background: rgba(197, 225, 165, 0.6);
+    margin: 3px;
+}
+.prod_img2{
+    background: rgba(252, 250, 211, 0.6);
+    margin: 3px;
+}
+.prod_img3{
+    background: rgba(254, 213, 164, 0.6);
+    margin: 3px;
+}
+.prod_img4{
+    background: rgba(229, 201, 251, 0.6);
+    margin: 3px;
+}
+.prod_img5{
+    background: rgba(161, 139, 118, 0.6);
+    margin: 3px;
+    width: 220px;
+}
+.prod_img6{
+    background: rgba(222, 205, 185, 0.6);
+    margin: 3px;
+}
+.prod_img7{
+    background: rgba(243, 186, 186, 0.6);
+    margin: 3px;
+    width: 220px;
+    height: 100%;
+    padding-right: 52px !important;
+}
+.prod_img8{
+    background: rgba(214, 236, 243, 0.6);
+    margin: 3px;
+}
+
+.img{
+    padding: 23px 42px;
+    position: relative;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.img:hover{
+    transform: scale3d(0.9,0.9,0.9);
+    z-index: 1;
+    transition: all .3s ease-in;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #ccc;
+}
+
+.prodBox{
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+.hometitle{
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    font-size: 88px;
+    font-weight: 300;
+    background: transparent;
+    line-height: 1;
+}
+
+.homesubtitle{
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 430px;
+    left: 60px;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background: transparent;
+    color: rgba(0,0,0,0.5);
+}
+
+@media (max-width: 820px){
+    .hometitle{
+        top:520px;
+        left:30px;
+        font-size: 60px;
+    }
+    .homesubtitle{
+        top: 640px;
+        left: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 720px){
+    .homepage{
+        display: block;
+    }
+    .row{
+        display: grid;
+        justify-content: space-around;
+    }
+    .img{
+        padding: 23px 42px;
+        position: relative;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+        margin: 5px auto !important;
+    }
+}

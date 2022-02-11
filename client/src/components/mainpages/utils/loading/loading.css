@@ -1,0 +1,6 @@
+.load-page{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    top: 50% !important;
+}
